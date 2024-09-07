@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "htM+3hxT5v/25Y1ke94GOz5j5bBZ29HwgzMUQ76EmGOfoL3fvX20+ulcDsK7mQlY4MPJtvTuupW0nLewgs/4SA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\YoutubeViewers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shenw\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
