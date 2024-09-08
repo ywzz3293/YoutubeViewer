@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\App.xaml
-4-85271089
+7-284405610
 
-14-1294124025
+17-1355756232
 1991857739072
-Components\YoutubeViewersDetails.xaml;Components\YoutubeViewersListing.xaml;MainWindow.xaml;Views\YoutubeViewersView.xaml;
+Components\YouTubeViewerDetailsForm.xaml;Components\YoutubeViewersDetails.xaml;Components\YoutubeViewersListing.xaml;MainWindow.xaml;Views\AddYoutubeViewerView.xaml;Views\EditYoutubeViewerView.xaml;Views\YoutubeViewersView.xaml;
 
 False
 

@@ -54,7 +54,7 @@ namespace YoutubeViewer.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/YoutubeViewers;component/views/youtubeviewersview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/YoutubeViewers;V1.0.0.0;component/views/youtubeviewersview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\YoutubeViewersView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

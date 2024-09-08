@@ -29,3 +29,9 @@ C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-w
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\YoutubeViewers.pdb
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\YoutubeViewers.genruntimeconfig.cache
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\ref\YoutubeViewers.dll
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\AddYoutubeViewerView.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\EditYoutubeViewerView.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.baml
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\AddYoutubeViewerView.baml
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\EditYoutubeViewerView.baml
