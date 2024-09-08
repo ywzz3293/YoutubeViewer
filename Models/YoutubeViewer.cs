@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace YoutubeViewer.Models
+namespace YoutubeViewers.Models
 {
     internal class YoutubeViewer
     {

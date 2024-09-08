@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewer.Models;
+using YoutubeViewers.Models;
 
-namespace YoutubeViewer.Stores
+namespace YoutubeViewers.Stores
 {
     internal class SelectedYoutubeViewerStore
     {

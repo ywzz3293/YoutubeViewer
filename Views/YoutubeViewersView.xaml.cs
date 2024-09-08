@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace YoutubeViewer.Views
+namespace YoutubeViewers.Views
 {
     /// <summary>
     /// Interaction logic for YoutubeViewersView.xaml

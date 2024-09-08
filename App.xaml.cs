@@ -1,9 +1,10 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-using YoutubeViewer.Stores;
+using YoutubeViewers.Stores;
+using YoutubeViewers.ViewModels;
 
-namespace YoutubeViewer
+namespace YoutubeViewers
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -11,9 +12,11 @@ namespace YoutubeViewer
     public partial class App : Application
     {
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
+        private readonly ModalNavigationStore _modalNavigationStore;
 
         public App()
         {
+            _modalNavigationStore = new ModalNavigationStore();
             _selectedYoutubeViewerStore = new SelectedYoutubeViewerStore();
         }
 
@@ -21,8 +24,9 @@ namespace YoutubeViewer
         {
             MainWindow = new MainWindow()
             {
-                DataContext = new ViewModels.YoutubeViewersViewModel(_selectedYoutubeViewerStore)
+                DataContext = new MainViewModel(_modalNavigationStore, new ViewModels.YoutubeViewersViewModel(_selectedYoutubeViewerStore))
             };
+
             MainWindow.Show();
             base.OnStartup(e);
         }

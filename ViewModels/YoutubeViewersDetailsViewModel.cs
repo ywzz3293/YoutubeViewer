@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewer.Stores;
-using YoutubeViewer.Models;
+using YoutubeViewers.Stores;
+using YoutubeViewers.Models;
 
-namespace YoutubeViewer.ViewModels
+namespace YoutubeViewers.ViewModels
 {
     internal class YoutubeViewersDetailsViewModel : ViewModelBase
     {

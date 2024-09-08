@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace YoutubeViewer.ViewModels
+namespace YoutubeViewers.ViewModels
 {
     internal class ViewModelBase : INotifyPropertyChanged
     {

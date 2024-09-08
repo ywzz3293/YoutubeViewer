@@ -4,9 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewer.Stores;
+using YoutubeViewers.Stores;
 
-namespace YoutubeViewer.ViewModels
+namespace YoutubeViewers.ViewModels
 {
     internal class YoutubeViewersListingViewModel:ViewModelBase
     {

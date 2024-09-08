@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace YoutubeViewer.ViewModels
+namespace YoutubeViewers.ViewModels
 {
     internal class YoutubeViewersViewModel:ViewModelBase
     {

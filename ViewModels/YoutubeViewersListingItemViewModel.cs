@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace YoutubeViewer.ViewModels
+namespace YoutubeViewers.ViewModels
 {
     internal class YoutubeViewersListingItemViewModel : ViewModelBase
     {
         public Models.YoutubeViewer YoutubeViewer { get; }
 
-        public string Username => YoutubeViewer.Username;
+        public string Username => YoutubeViewers.Username;
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 

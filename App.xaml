@@ -1,7 +1,7 @@
-﻿<Application x:Class="YoutubeViewer.App"
+﻿<Application x:Class="YoutubeViewers.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:YoutubeViewer">
+             xmlns:local="clr-namespace:YoutubeViewers">
     <Application.Resources>
         <ResourceDictionary>
             <SolidColorBrush x:Key="BorderPrimary" Color="#1c1c1c" />
