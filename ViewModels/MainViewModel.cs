@@ -23,8 +23,6 @@ namespace YoutubeViewers.ViewModels
             this.youtubeViewersViewModel = youtubeViewersViewModel;
 
             _modalNavigationStore.CurrentModelChanged += _modalNavigationStore_CurrentModelChanged;
-
-            _modalNavigationStore.CurrentViewModel = new AddYouTubeViewerViewModel();
         }
 
         protected override void Dispose()
