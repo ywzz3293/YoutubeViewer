@@ -11,7 +11,7 @@ namespace YoutubeViewers.ViewModels
     {
         public Models.YoutubeViewer YoutubeViewer { get; }
 
-        public string Username => YoutubeViewers.Username;
+        public string Username => YoutubeViewer.Username;
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 

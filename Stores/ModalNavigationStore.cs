@@ -10,7 +10,7 @@ namespace YoutubeViewers.Stores
     internal class ModalNavigationStore
     {
         private ViewModelBase _currentModel;
-        public ViewModelBase CurrentModel
+        public ViewModelBase CurrentViewModel
         {
             get { return _currentModel; }
             set { 
@@ -18,6 +18,8 @@ namespace YoutubeViewers.Stores
                 CurrentModelChanged?.Invoke();
             }
         }
+
+        public bool IsOpen => _currentModel != null;
 
         public event Action CurrentModelChanged;
     }

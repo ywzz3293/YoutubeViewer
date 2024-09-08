@@ -35,3 +35,4 @@ C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-w
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.baml
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\AddYoutubeViewerView.baml
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\EditYoutubeViewerView.baml
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\bin\Debug\net8.0-windows\ModalControl.dll
