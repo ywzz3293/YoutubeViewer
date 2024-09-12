@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewers.Stores;
-using YoutubeViewers.Models;
+using WPF.Stores;
+using WPF.Models;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class YoutubeViewersDetailsViewModel : ViewModelBase
+    public class YoutubeViewersDetailsViewModel : ViewModelBase
     {
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kSHNBE9wK8JvEM+x7iJHCeKY0C5ufK3xI3AxmId65hsX+YKQu97KNA1+JFXA5Entii0LDYGr/NcXJAx9UBUipw==",
+  "dgSpecHash": "GkAxXYH7egos2x+F3kKirCFzTyBAwjzdQSO4R4HnP4GcEkl+NBWgcs2Za3mGWwYSRHIldB0WIqAZW40BQzZJgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\YoutubeViewers.csproj",
+  "projectFilePath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shenw\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512",
     "C:\\Users\\shenw\\.nuget\\packages\\simplemodal.wpf\\1.0.0\\simplemodal.wpf.1.0.0.nupkg.sha512"

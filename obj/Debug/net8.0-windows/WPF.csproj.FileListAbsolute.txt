@@ -1,0 +1,13 @@
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\WPF.csproj.AssemblyReference.cache
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YoutubeViewersDetails.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YoutubeViewersListing.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YoutubeViewersListingItem.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\AddYoutubeViewerView.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\EditYoutubeViewerView.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Views\YoutubeViewersView.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\WPF_MarkupCompile.cache
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\WPF_MarkupCompile.lref

@@ -3,27 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewers.Models;
-using YoutubeViewers.Stores;
-using YoutubeViewers.ViewModels;
+using WPF.Models;
+using WPF.Stores;
+using WPF.ViewModels;
 
-namespace YoutubeViewers.Commands
+namespace WPF.Commands
 {
-    internal class OpenEditYoutubeViewerCommand : CommandBase
+    public class OpenEditYoutubeViewerCommand : CommandBase
     {
-        private readonly ModalNavigationStore _navigationStore;
-        private readonly YoutubeViewer _youtubeViewer;
+        private readonly ModalNavigationStore _modalNavigationStore;
+        private readonly YoutubeViewersStore _youtubeViewersStore;
+        private readonly YoutubeViewersListingItemViewModel _youtubeViewersListingItemViewModel;
 
-        public OpenEditYoutubeViewerCommand(YoutubeViewer youtubeViewer, ModalNavigationStore modalNavigationStore)
+        public OpenEditYoutubeViewerCommand(YoutubeViewersListingItemViewModel youtubeViewersListingItemViewModel, YoutubeViewersStore youtubeViewersStore, ModalNavigationStore modalNavigationStore)
         {
-            _youtubeViewer = youtubeViewer;
-            _navigationStore = new ModalNavigationStore();
+            _youtubeViewersListingItemViewModel = youtubeViewersListingItemViewModel;
+            _youtubeViewersStore = youtubeViewersStore;
+            _modalNavigationStore = modalNavigationStore;
         }
         public override void Execute(object parameter)
         {
-            EditYouTubeViewerViewModel editYouTubeViewerViewModel = new EditYouTubeViewerViewModel(_youtubeViewer, _navigationStore);
+            YoutubeViewer youtubeViewer = _youtubeViewersListingItemViewModel.YoutubeViewer;
 
-            _navigationStore.CurrentViewModel = editYouTubeViewerViewModel;
+            EditYouTubeViewerViewModel editYouTubeViewerViewModel = new EditYouTubeViewerViewModel(youtubeViewer,_youtubeViewersStore, _modalNavigationStore);
+
+            _modalNavigationStore.CurrentViewModel = editYouTubeViewerViewModel;
         }
     }
 }

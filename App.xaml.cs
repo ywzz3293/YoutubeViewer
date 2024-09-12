@@ -1,8 +1,8 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-using YoutubeViewers.Stores;
-using YoutubeViewers.ViewModels;
+using WPF.Stores;
+using WPF.ViewModels;
 
 namespace YoutubeViewers
 {
@@ -12,19 +12,27 @@ namespace YoutubeViewers
     public partial class App : Application
     {
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
+        private readonly YoutubeViewersStore _youtubeViewersStore;
         private readonly ModalNavigationStore _modalNavigationStore;
 
         public App()
         {
             _modalNavigationStore = new ModalNavigationStore();
-            _selectedYoutubeViewerStore = new SelectedYoutubeViewerStore();
+            _youtubeViewersStore = new YoutubeViewersStore();
+            _selectedYoutubeViewerStore = new SelectedYoutubeViewerStore(_youtubeViewersStore);
         }
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            YoutubeViewersViewModel youtubeViewersViewModel = new YoutubeViewersViewModel(
+                _youtubeViewersStore,
+                _selectedYoutubeViewerStore,
+                _modalNavigationStore
+                );
+
             MainWindow = new MainWindow()
             {
-                DataContext = new MainViewModel(_modalNavigationStore, new ViewModels.YoutubeViewersViewModel(_selectedYoutubeViewerStore, _modalNavigationStore))
+                DataContext = new MainViewModel(_modalNavigationStore, new YoutubeViewersViewModel(_youtubeViewersStore, _selectedYoutubeViewerStore, _modalNavigationStore))
             };
 
             MainWindow.Show();

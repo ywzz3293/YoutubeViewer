@@ -36,3 +36,5 @@ C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-w
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\YoutubeV.BE7B08B5.Up2Date
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\YoutubeViewers.genruntimeconfig.cache
 C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\ref\YoutubeViewers.dll
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YoutubeViewersListingItem.g.cs
+C:\Users\shenw\Documents\Projects\YoutubeViewer\YoutubeViewer\obj\Debug\net8.0-windows\Components\YoutubeViewersListingItem.baml

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewers.Stores;
+using WPF.Stores;
 
-namespace YoutubeViewers.Commands
+namespace WPF.Commands
 {
-    internal class CloseModalCommand : CommandBase
+    public class CloseModalCommand : CommandBase
     {
         private readonly ModalNavigationStore _navigationStore;
 

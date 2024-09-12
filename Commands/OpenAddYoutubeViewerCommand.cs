@@ -4,22 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using YoutubeViewers.Stores;
-using YoutubeViewers.ViewModels;
+using WPF.Stores;
+using WPF.ViewModels;
 
-namespace YoutubeViewers.Commands
+namespace WPF.Commands
 {
-    internal class OpenAddYoutubeViewerCommand : CommandBase
+    public class OpenAddYoutubeViewerCommand : CommandBase
     {
         private readonly ModalNavigationStore _navigationStore;
+        private readonly YoutubeViewersStore _youtubeViewersStore;
 
-        public OpenAddYoutubeViewerCommand(object modalNavigationStore)
+        public OpenAddYoutubeViewerCommand(YoutubeViewersStore youtubeViewersStore, ModalNavigationStore modalNavigationStore)
         {
-            _navigationStore = new ModalNavigationStore();
+            _navigationStore = modalNavigationStore;
+            _youtubeViewersStore = youtubeViewersStore;
         }
         public override void Execute(object parameter)
         {
-            AddYouTubeViewerViewModel addYouTubeViewerViewModel = new AddYouTubeViewerViewModel(_navigationStore);
+            AddYouTubeViewerViewModel addYouTubeViewerViewModel = new AddYouTubeViewerViewModel(_youtubeViewersStore, _navigationStore);
 
             _navigationStore.CurrentViewModel = addYouTubeViewerViewModel;
         }

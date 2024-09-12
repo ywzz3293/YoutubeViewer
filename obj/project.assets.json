@@ -67,9 +67,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\YoutubeViewers.csproj",
-      "projectName": "YoutubeViewers",
-      "projectPath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\YoutubeViewers.csproj",
+      "projectUniqueName": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\WPF.csproj",
+      "projectName": "WPF",
+      "projectPath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\WPF.csproj",
       "packagesPath": "C:\\Users\\shenw\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\obj\\",
       "projectStyle": "PackageReference",

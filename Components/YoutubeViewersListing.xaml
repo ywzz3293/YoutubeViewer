@@ -1,11 +1,12 @@
-﻿<UserControl x:Class="YoutubeViewers.Components.YoutubeViewersListing"
+﻿<UserControl x:Class="WPF.Components.YoutubeViewersListing"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YoutubeViewers.Components"
-             xmlns:viewmodels="clr-namespace:YoutubeViewers.ViewModels"
-             xmlns:custom="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl" d:DataContext="{d:DesignInstance Type=viewmodels:YoutubeViewersListingViewModel}"
+             xmlns:local="clr-namespace:WPF.Components"
+             xmlns:viewmodels="clr-namespace:WPF.ViewModels"
+             xmlns:custom="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl" 
+             d:DataContext="{d:DesignInstance Type=viewmodels:YoutubeViewersListingViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -13,47 +14,38 @@
             <VisualBrush Visual="{Binding ElementName=border}" />
         </Grid.OpacityMask>-->
         <Border
-            BorderBrush="Gray"
+            BorderBrush="{StaticResource BorderPrimary}"
             BorderThickness="1"
-            CornerRadius="5">
-            <ListView BorderThickness="0" SelectedItem="{Binding SelectedYoutubeViewer}" ItemsSource="{Binding YoutubeViewersListingItemViewModels}">
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        <Setter Property="AutomationProperties.AutomationId" Value="{Binding Username, StringFormat={}{0}_YouTubeViewerListingItem}" />
-                    </Style>
-                </ListView.ItemContainerStyle>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border Padding="5 10" TextBlock.FontSize="16">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
+            CornerRadius="5"
+            SnapsToDevicePixels="True">
+            <Grid>
+                <Grid.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=border}" />
+                </Grid.OpacityMask>
+                <Border
+                    x:Name="border"
+                    Background="White"
+                    CornerRadius="5" />
 
-                                <TextBlock Grid.Column="0" Text="{Binding Username}"/>
-                                <custom:DropdownMenu Grid.Column="1" Margin="10 0 0 0">
-                                    <Border 
-                                        Background="white"
-                                        BorderBrush="Gray"
-                                        BorderThickness="1">
-                                        <StackPanel>
-                                            <StackPanel.Resources>
-                                                <Style TargetType="Button">
-                                                    <Setter Property="Background" Value="Gray"/>
-                                                </Style>
-                                            </StackPanel.Resources>
-                                            <Button Command="{Binding EditCommand}" Content="Edit"/>
-                                            <Button Command="{Binding DeleteCommand}" Content="Delete"/>
-                                        </StackPanel>
-                                    </Border>
-                                </custom:DropdownMenu>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                <ListView
+                    BorderThickness="0"
+                    ItemsSource="{Binding YouTubeViewersListingItemViewModels}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    SelectedItem="{Binding SelectedYouTubeViewerListingItemViewModel}"
+                    SelectionMode="Single">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            <Setter Property="AutomationProperties.AutomationId" Value="{Binding Username, StringFormat={}{0}_YouTubeViewerListingItem}" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <local:YoutubeViewersListingItem />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
         </Border>
     </Grid>
 </UserControl>

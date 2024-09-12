@@ -4,20 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using YoutubeViewers.Commands;
-using YoutubeViewers.Models;
-using YoutubeViewers.Stores;
-using YoutubeViewers.ViewModels;
+using WPF.Commands;
+using WPF.Models;
+using WPF.Stores;
+using WPF.ViewModels;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class EditYouTubeViewerViewModel : ViewModelBase
+    public class EditYouTubeViewerViewModel : ViewModelBase
     {
+        public Guid youtubeViewerId { get; }
         public YouTubeViewerDetailsFormViewModel YouTubeViewerDetailsFormViewModel { get; }
-        public EditYouTubeViewerViewModel(YoutubeViewer youtubeViewer, ModalNavigationStore modalVavigationStore)
+        public EditYouTubeViewerViewModel(YoutubeViewer youtubeViewer, YoutubeViewersStore youtubeViewersStore, ModalNavigationStore modalVavigationStore)
         {
+            youtubeViewerId = youtubeViewer.Id;
             ICommand cancelCommand = new CloseModalCommand(modalVavigationStore);
-            YouTubeViewerDetailsFormViewModel = new YouTubeViewerDetailsFormViewModel(null, cancelCommand)
+            ICommand submitCommand = new EditYoutubeViewerCommand(this, youtubeViewersStore, modalVavigationStore);
+            YouTubeViewerDetailsFormViewModel = new YouTubeViewerDetailsFormViewModel(submitCommand, cancelCommand)
             {
                 Username = youtubeViewer.Username,
                 IsSubscribed = youtubeViewer.IsSubscribed,

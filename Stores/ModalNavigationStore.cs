@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewers.ViewModels;
+using WPF.ViewModels;
 
-namespace YoutubeViewers.Stores
+namespace WPF.Stores
 {
-    internal class ModalNavigationStore
+    public class ModalNavigationStore
     {
         private ViewModelBase _currentModel;
         public ViewModelBase CurrentViewModel

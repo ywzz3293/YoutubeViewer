@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YoutubeViewers.ViewModels;
-using YoutubeViewers.Stores;
+using WPF.ViewModels;
+using WPF.Stores;
 using System.Net.Http.Headers;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class MainViewModel: ViewModelBase
+    public class MainViewModel: ViewModelBase
     {
         private readonly ModalNavigationStore _modalNavigationStore;
 

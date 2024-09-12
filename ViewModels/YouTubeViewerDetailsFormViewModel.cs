@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using YoutubeViewers.ViewModels;
+using WPF.ViewModels;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class YouTubeViewerDetailsFormViewModel: ViewModelBase
+    public class YouTubeViewerDetailsFormViewModel: ViewModelBase
     {
         private string _username;
         public string Username

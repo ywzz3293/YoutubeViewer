@@ -4,22 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using YoutubeViewers.Models;
+using WPF.Commands;
+using WPF.Models;
+using WPF.Stores;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class YoutubeViewersListingItemViewModel : ViewModelBase
+    public class YoutubeViewersListingItemViewModel : ViewModelBase
     {
-        public Models.YoutubeViewer YoutubeViewer { get; }
+        public YoutubeViewer YoutubeViewer { get; private set; }
 
         public string Username => YoutubeViewer.Username;
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
-        public YoutubeViewersListingItemViewModel(YoutubeViewer youtubeViewer, ICommand editCommand)
+        public YoutubeViewersListingItemViewModel(YoutubeViewer youtubeViewer, YoutubeViewersStore youtubeViewersStore, ModalNavigationStore _modalNavigationStore)
         {
             YoutubeViewer = youtubeViewer;
-            EditCommand = editCommand;            
+            EditCommand = new OpenEditYoutubeViewerCommand(this, youtubeViewersStore, _modalNavigationStore);            
+        }
+
+        public void Update(YoutubeViewer youtubeViewer)
+        {
+            YoutubeViewer = youtubeViewer;
+            OnPropertyChanged(nameof(Username));
+
         }
     }
 }

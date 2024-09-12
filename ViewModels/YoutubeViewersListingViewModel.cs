@@ -5,19 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using YoutubeViewers.Commands;
-using YoutubeViewers.Models;
-using YoutubeViewers.Stores;
+using WPF.Commands;
+using WPF.Models;
+using WPF.Stores;
 
-namespace YoutubeViewers.ViewModels
+namespace WPF.ViewModels
 {
-    internal class YoutubeViewersListingViewModel:ViewModelBase
+    public class YoutubeViewersListingViewModel:ViewModelBase
     {
         private readonly ObservableCollection<YoutubeViewersListingItemViewModel> _youtubeViewersListingViewModel;
 
         private YoutubeViewersListingItemViewModel _selectedYoutubeViewerListingItemModel;
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
         private readonly ModalNavigationStore _modalNavigationStore;
+        private readonly YoutubeViewersStore _youtubeViewersStore;
         public YoutubeViewersListingItemViewModel SelectedYoutubeViewerListingItemModel
         {   get
             {
@@ -32,24 +33,46 @@ namespace YoutubeViewers.ViewModels
                 
         }
 
-
         public IEnumerable<YoutubeViewersListingItemViewModel> YoutubeViewersListingItemViewModels => _youtubeViewersListingViewModel;
     
-        public YoutubeViewersListingViewModel(SelectedYoutubeViewerStore selectedYoutubeViewerStore, ModalNavigationStore modalNavigationStore)
+        public YoutubeViewersListingViewModel(YoutubeViewersStore youtubeViewersStore, SelectedYoutubeViewerStore selectedYoutubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
             _selectedYoutubeViewerStore = selectedYoutubeViewerStore;
             _modalNavigationStore = modalNavigationStore;
+            _youtubeViewersStore = youtubeViewersStore;
             _youtubeViewersListingViewModel = new ObservableCollection<YoutubeViewersListingItemViewModel>();
 
-            AddYouTubeViewer(new Models.YoutubeViewer("Mary", true, false));
-            AddYouTubeViewer(new Models.YoutubeViewer("Sean", false, false));
-            AddYouTubeViewer(new Models.YoutubeViewer("Alan", true, true));
+            _youtubeViewersStore.YoutubeViewerAdded += YoutubeViewersStore_YoutubeViewerAdded;
+            _youtubeViewersStore.YoutubeViewerUpdated += YoutubeViewersStore_YoutubeViewerUpdated;
+        }
+
+        private void YoutubeViewersStore_YoutubeViewerUpdated(YoutubeViewer viewer)
+        {
+            YoutubeViewersListingItemViewModel youtubeViewersListingItemViewModel = _youtubeViewersListingViewModel.FirstOrDefault(y=>y.YoutubeViewer.Id == viewer.Id);
+
+            if (youtubeViewersListingItemViewModel != null)
+            {
+                youtubeViewersListingItemViewModel.Update(viewer);
+            }
+        
+        }
+
+        protected override void Dispose()
+        {
+            _youtubeViewersStore.YoutubeViewerAdded -= YoutubeViewersStore_YoutubeViewerAdded;
+            _youtubeViewersStore.YoutubeViewerUpdated -= YoutubeViewersStore_YoutubeViewerUpdated;
+            base.Dispose();
+        }
+
+        private void YoutubeViewersStore_YoutubeViewerAdded(YoutubeViewer viewer)
+        {
+            AddYouTubeViewer(viewer);
         }
 
         private void AddYouTubeViewer(YoutubeViewer youtubeViewer)
         {
-            ICommand editCommand = new OpenEditYoutubeViewerCommand(youtubeViewer, _modalNavigationStore);
-            _youtubeViewersListingViewModel.Add(new YoutubeViewersListingItemViewModel(youtubeViewer, editCommand));
+            var ItemViewModel = new YoutubeViewersListingItemViewModel(youtubeViewer, _youtubeViewersStore, _modalNavigationStore);
+            _youtubeViewersListingViewModel.Add(ItemViewModel);
         }
     }
 }
