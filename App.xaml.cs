@@ -24,7 +24,7 @@ namespace YoutubeViewers
         {
             MainWindow = new MainWindow()
             {
-                DataContext = new MainViewModel(_modalNavigationStore, new ViewModels.YoutubeViewersViewModel(_selectedYoutubeViewerStore))
+                DataContext = new MainViewModel(_modalNavigationStore, new ViewModels.YoutubeViewersViewModel(_selectedYoutubeViewerStore, _modalNavigationStore))
             };
 
             MainWindow.Show();

@@ -22,5 +22,10 @@ namespace YoutubeViewers.Stores
         public bool IsOpen => _currentModel != null;
 
         public event Action CurrentModelChanged;
+
+        internal void Close()
+        {
+            CurrentViewModel = null;
+        }
     }
 }

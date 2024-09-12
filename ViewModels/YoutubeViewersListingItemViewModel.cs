@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using YoutubeViewers.Models;
 
 namespace YoutubeViewers.ViewModels
 {
@@ -15,9 +16,10 @@ namespace YoutubeViewers.ViewModels
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
-        public YoutubeViewersListingItemViewModel(Models.YoutubeViewer youtubeViewer)
+        public YoutubeViewersListingItemViewModel(YoutubeViewer youtubeViewer, ICommand editCommand)
         {
-            this.YoutubeViewer = youtubeViewer;
+            YoutubeViewer = youtubeViewer;
+            EditCommand = editCommand;            
         }
     }
 }
