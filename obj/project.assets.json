@@ -25,6 +25,16 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -52,10 +62,16 @@
         "simplemodal.wpf.1.0.0.nupkg.sha512",
         "simplemodal.wpf.nuspec"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "Domain >= 1.0.0",
       "DropdownMenu.WPF >= 1.0.0",
       "SimpleModal.WPF >= 1.0.0"
     ]
@@ -92,7 +108,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

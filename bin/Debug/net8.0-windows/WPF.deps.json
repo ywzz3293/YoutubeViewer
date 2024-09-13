@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "WPF/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "DropdownMenu.WPF": "1.0.0",
           "SimpleModal.WPF": "1.0.0"
         },
@@ -29,6 +30,11 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        }
+      },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {}
         }
       }
     }
@@ -52,6 +58,11 @@
       "sha512": "sha512-dtTvUl6O2peKZz2oCh5Y6mRjYL+q/Izxm6+z/Nzdpbcgxdo/qTD39stwegu/sY0uBTAYGJEy2P9X8mwpOMM+rw==",
       "path": "simplemodal.wpf/1.0.0",
       "hashPath": "simplemodal.wpf.1.0.0.nupkg.sha512"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
