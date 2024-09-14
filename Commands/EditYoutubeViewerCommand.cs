@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WPF.Models;
+using Domain.Models;
 using WPF.Stores;
 using WPF.ViewModels;
 
@@ -26,7 +26,7 @@ namespace WPF.Commands
         {
             var form = _editYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
 
-            Models.YoutubeViewer youtubeViewer = new YoutubeViewer(
+            YoutubeViewer youtubeViewer = new YoutubeViewer(
                 _editYouTubeViewerViewModel.youtubeViewerId,
                 form.Username,
                 form.IsSubscribed,

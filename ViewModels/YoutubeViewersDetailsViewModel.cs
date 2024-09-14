@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WPF.Stores;
-using WPF.Models;
+using Domain.Models;
 
 namespace WPF.ViewModels
 {
@@ -12,7 +12,7 @@ namespace WPF.ViewModels
     {
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
 
-        private Models.YoutubeViewer? SelectedYoutubeViewer => _selectedYoutubeViewerStore.SelectedYouTubeViewer;
+        private YoutubeViewer? SelectedYoutubeViewer => _selectedYoutubeViewerStore.SelectedYouTubeViewer;
         
         public bool HasSelectedYoutubeViewer=>SelectedYoutubeViewer != null;
         public string Username => SelectedYoutubeViewer?.Username ?? "Unknown";

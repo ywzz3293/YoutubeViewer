@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using WPF.Commands;
-using WPF.Models;
+using Domain.Models;
 using WPF.Stores;
 using WPF.ViewModels;
 
