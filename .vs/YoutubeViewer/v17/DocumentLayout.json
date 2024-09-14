@@ -3,30 +3,63 @@
   "WorkspaceRootPath": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\createyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\queries\\getallyoutubeviewersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\viewmodels\\youtubeviewerslistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:viewmodels\\youtubeviewerslistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\viewmodels\\youtubeviewerslistingitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:viewmodels\\youtubeviewerslistingitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\commands\\deleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:commands\\deleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\commands\\openedityoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:commands\\openedityoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\stores\\youtubeviewersstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:stores\\youtubeviewersstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\updateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\viewmodels\\youtubeviewersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:viewmodels\\youtubeviewersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\deleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\commands\\loadyoutubeviewerscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:commands\\loadyoutubeviewerscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\youtubeviewer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2188793B-9D05-4B46-BFD1-B9949C5571AF}|WPF.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\migrations\\youtubeviewersdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\migrations\\20240914190143_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\youtubeviewersdesigntimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\youtubeviewersdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\youtubeviewersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\youtubeviewersdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\createyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\updateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5070E2DE-DC2D-4B55-AEF9-85FC49242C14}|..\\EntityFramework\\EntityFramework.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\entityframework\\commands\\deleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38BFA212-6172-411C-B5C4-8D6268E9AC47}|..\\Domain\\Domain.csproj|c:\\users\\shenw\\documents\\projects\\youtubeviewer\\domain\\commands\\iupdateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -45,17 +78,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAlwC0AAAAqAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAIA7wDkAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:47:01.066Z",
               "IsPinned": true,
@@ -63,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "YoutubeViewersStore.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Stores\\YoutubeViewersStore.cs",
               "RelativeDocumentMoniker": "Stores\\YoutubeViewersStore.cs",
               "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Stores\\YoutubeViewersStore.cs",
               "RelativeToolTip": "Stores\\YoutubeViewersStore.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAawBIAAAAiAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAuwFAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:43:32.885Z",
               "IsPinned": true,
@@ -77,20 +110,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteYoutubeViewerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
-              "RelativeDocumentMoniker": "..\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
-              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
-              "RelativeToolTip": "..\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBYAAAAqAAAA",
+              "DocumentIndex": 2,
+              "Title": "YoutubeViewersListingItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersListingItemViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\YoutubeViewersListingItemViewModel.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersListingItemViewModel.cs",
+              "RelativeToolTip": "ViewModels\\YoutubeViewersListingItemViewModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:57:59.547Z",
+              "WhenOpened": "2024-09-14T19:40:53.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteYoutubeViewerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\DeleteYoutubeViewerCommand.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "RelativeToolTip": "Commands\\DeleteYoutubeViewerCommand.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAEwBsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:37:42.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YoutubeViewersListingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersListingViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\YoutubeViewersListingViewModel.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersListingViewModel.cs",
+              "RelativeToolTip": "ViewModels\\YoutubeViewersListingViewModel.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAawDwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:18:58.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GetAllYoutubeViewersQuery.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
+              "RelativeToolTip": "..\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAASwBYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:53:20Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OpenEditYoutubeViewerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\OpenEditYoutubeViewerCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OpenEditYoutubeViewerCommand.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\OpenEditYoutubeViewerCommand.cs",
+              "RelativeToolTip": "Commands\\OpenEditYoutubeViewerCommand.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:37:49.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "YoutubeViewersViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\YoutubeViewersViewModel.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\ViewModels\\YoutubeViewersViewModel.cs",
+              "RelativeToolTip": "ViewModels\\YoutubeViewersViewModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAvwBUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:19:04.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoadYoutubeViewersCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\LoadYoutubeViewersCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LoadYoutubeViewersCommand.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\YoutubeViewer\\Commands\\LoadYoutubeViewersCommand.cs",
+              "RelativeToolTip": "Commands\\LoadYoutubeViewersCommand.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:16:22.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "YoutubeViewersDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Migrations\\YoutubeViewersDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\Migrations\\YoutubeViewersDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Migrations\\YoutubeViewersDbContextModelSnapshot.cs",
+              "RelativeToolTip": "..\\EntityFramework\\Migrations\\YoutubeViewersDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:02:15.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240914190143_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Migrations\\20240914190143_Initial.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\Migrations\\20240914190143_Initial.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Migrations\\20240914190143_Initial.cs",
+              "RelativeToolTip": "..\\EntityFramework\\Migrations\\20240914190143_Initial.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:02:14.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "YoutubeViewersDesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\YoutubeViewersDesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\YoutubeViewersDesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\YoutubeViewersDesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "..\\EntityFramework\\YoutubeViewersDesignTimeDbContextFactory.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:56:18.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CreateYoutubeViewerCommand.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\CreateYoutubeViewerCommand.cs",
               "RelativeDocumentMoniker": "..\\EntityFramework\\Commands\\CreateYoutubeViewerCommand.cs",
@@ -103,33 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateYoutubeViewerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
-              "RelativeDocumentMoniker": "..\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
-              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
-              "RelativeToolTip": "..\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:58:04.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAllYoutubeViewersQuery.cs",
-              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
-              "RelativeDocumentMoniker": "..\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
-              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
-              "RelativeToolTip": "..\\EntityFramework\\Queries\\GetAllYoutubeViewersQuery.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIA1wBYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:53:20Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "YoutubeViewersDbContext.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\YoutubeViewersDbContext.cs",
               "RelativeDocumentMoniker": "..\\EntityFramework\\YoutubeViewersDbContext.cs",
@@ -142,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "YoutubeViewersDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\YoutubeViewersDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\EntityFramework\\YoutubeViewersDbContextFactory.cs",
@@ -155,7 +279,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
+              "Title": "UpdateYoutubeViewerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
+              "RelativeToolTip": "..\\EntityFramework\\Commands\\UpdateYoutubeViewerCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:58:04.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeleteYoutubeViewerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "RelativeDocumentMoniker": "..\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "ToolTip": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "RelativeToolTip": "..\\EntityFramework\\Commands\\DeleteYoutubeViewerCommand.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:57:59.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "IUpdateYoutubeViewerCommand.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\Domain\\Commands\\IUpdateYoutubeViewerCommand.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Commands\\IUpdateYoutubeViewerCommand.cs",
@@ -168,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "IDeleteYoutubeViewerCommand.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\Domain\\Commands\\IDeleteYoutubeViewerCommand.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Commands\\IDeleteYoutubeViewerCommand.cs",
@@ -181,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "ICreateYoutubeViewerCommand.cs",
               "DocumentMoniker": "C:\\Users\\shenw\\Documents\\Projects\\YoutubeViewer\\Domain\\Commands\\ICreateYoutubeViewerCommand.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Commands\\ICreateYoutubeViewerCommand.cs",

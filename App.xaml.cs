@@ -49,11 +49,17 @@ namespace YoutubeViewers
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            using (YoutubeViewersDbContext context = _youtubeViewersDbContextFactory.Create())
+            {
+                context.Database.Migrate();
+            }
+
+
             YoutubeViewersViewModel youtubeViewersViewModel = new YoutubeViewersViewModel(
                 _youtubeViewersStore,
                 _selectedYoutubeViewerStore,
                 _modalNavigationStore
-                );
+             );
 
             MainWindow = new MainWindow()
             {

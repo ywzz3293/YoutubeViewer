@@ -22,6 +22,7 @@ namespace WPF.ViewModels
         {
             YoutubeViewer = youtubeViewer;
             EditCommand = new OpenEditYoutubeViewerCommand(this, youtubeViewersStore, _modalNavigationStore);            
+            DeleteCommand = new DeleteYoutubeViewerCommand(this, youtubeViewersStore);            
         }
 
         public void Update(YoutubeViewer youtubeViewer)
@@ -30,5 +31,7 @@ namespace WPF.ViewModels
             OnPropertyChanged(nameof(Username));
 
         }
+
+
     }
 }
