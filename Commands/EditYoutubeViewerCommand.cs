@@ -25,7 +25,8 @@ namespace WPF.Commands
         public override async Task ExecuteAsync(object parameter)
         {
             var form = _editYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
-
+            form.ErrorMessage = null;
+            form.IsSubmitting = true;
             YoutubeViewer youtubeViewer = new YoutubeViewer(
                 _editYouTubeViewerViewModel.youtubeViewerId,
                 form.Username,
@@ -39,7 +40,11 @@ namespace WPF.Commands
             }
             catch (Exception)
             {
-                throw;
+                form.ErrorMessage = "Failed to update YouTube viewer. Please try again later.";
+            }
+            finally
+            {
+                form.IsSubmitting = false;
             }
         }
     }

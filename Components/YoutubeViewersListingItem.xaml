@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPF.Components" 
              xmlns:custom="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl" 
-             xmlns:wpf="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+             xmlns:wpf="http://schemas.microsoft.com/netfx/2009/xaml/presentation" xmlns:loadingspinner="clr-namespace:LoadingSpinnerControl;assembly=LoadingSpinnerControl"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -41,10 +41,10 @@
                         </Style>
                     </Grid.Style>
 
-                    <!--<loadingspinner:LoadingSpinner
+                    <loadingspinner:LoadingSpinner
                         Diameter="20"
                         IsLoading="True"
-                        Thickness="2" />-->
+                        Thickness="2" />
                 </Grid>
 
                 <Grid>

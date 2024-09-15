@@ -24,5 +24,10 @@ namespace WPF.Views
         {
             InitializeComponent();
         }
+
+        private void YoutubeViewersDetails_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

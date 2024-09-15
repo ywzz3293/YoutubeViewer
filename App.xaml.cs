@@ -1,14 +1,19 @@
 ﻿using Domain.Commands;
+using Domain.Models;
 using Domain.Queries;
 using EntityFramework;
 using EntityFramework.Commands;
 using EntityFramework.Queries;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System.Configuration;
 using System.Data;
 using System.Windows;
 using WPF.Stores;
 using WPF.ViewModels;
+using WPF.HostBuilders;
 
 namespace YoutubeViewers
 {
@@ -17,57 +22,63 @@ namespace YoutubeViewers
     /// </summary>
     public partial class App : Application
     {
-        private readonly YoutubeViewersDbContextFactory _youtubeViewersDbContextFactory;
-        private readonly ICreateYoutubeViewerCommand _createYoutubeViewerCommand;
-        private readonly IUpdateYoutubeViewerCommand _updateYoutubeViewerCommand;
-        private readonly IDeleteYoutubeViewerCommand _deleteYoutubeViewerCommand;
-        private readonly IGetAllYoutubeViewersQuery _getAllYoutubeViewersQuery;
-
-        private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
-        private readonly YoutubeViewersStore _youtubeViewersStore;
-        private readonly ModalNavigationStore _modalNavigationStore;
+        private readonly IHost _host;
 
         public App()
         {
-            string connexionString = "Data Source = YoutubeViewers.db";
-            _modalNavigationStore = new ModalNavigationStore();
-            _youtubeViewersDbContextFactory = new YoutubeViewersDbContextFactory(
-                new DbContextOptionsBuilder().UseSqlite(connexionString).Options
-                );
-            _getAllYoutubeViewersQuery = new GetAllYoutubeViewersQuery(_youtubeViewersDbContextFactory);
-            _createYoutubeViewerCommand = new CreateYoutubeViewerCommand(_youtubeViewersDbContextFactory);
-            _updateYoutubeViewerCommand = new UpdateYoutubeViewerCommand(_youtubeViewersDbContextFactory);
-            _deleteYoutubeViewerCommand = new DeleteYoutubeViewerCommand(_youtubeViewersDbContextFactory);
+            _host = Host.CreateDefaultBuilder()
+                .AddDbContext()
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddSingleton<IGetAllYoutubeViewersQuery,GetAllYoutubeViewersQuery>();
+                    services.AddSingleton<ICreateYoutubeViewerCommand,CreateYoutubeViewerCommand>();
+                    services.AddSingleton<IUpdateYoutubeViewerCommand,UpdateYoutubeViewerCommand>();
+                    services.AddSingleton<IDeleteYoutubeViewerCommand,DeleteYoutubeViewerCommand>();
 
-            _youtubeViewersStore = new YoutubeViewersStore(
-                _createYoutubeViewerCommand,
-                _updateYoutubeViewerCommand,
-                _deleteYoutubeViewerCommand,
-                _getAllYoutubeViewersQuery);
-            _selectedYoutubeViewerStore = new SelectedYoutubeViewerStore(_youtubeViewersStore);
+                    services.AddSingleton<ModalNavigationStore>();
+                    services.AddSingleton<YoutubeViewersStore>();
+                    services.AddSingleton<SelectedYoutubeViewerStore>();
+
+                    services.AddTransient<YoutubeViewersViewModel>(CreateYoutubeViewersViewModel);
+
+                    services.AddSingleton<MainViewModel>();
+
+                    services.AddSingleton<MainWindow>((services) => new MainWindow()
+                    {
+                        DataContext = services.GetRequiredService <MainViewModel>()
+                    });
+                }).Build();
         }
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            using (YoutubeViewersDbContext context = _youtubeViewersDbContextFactory.Create())
+            _host.Start();
+            var youtubeViewersDbContextFactory = _host.Services.GetRequiredService<YoutubeViewersDbContextFactory>();
+            using (YoutubeViewersDbContext context = youtubeViewersDbContextFactory.Create())
             {
                 context.Database.Migrate();
             }
 
-
-            YoutubeViewersViewModel youtubeViewersViewModel = new YoutubeViewersViewModel(
-                _youtubeViewersStore,
-                _selectedYoutubeViewerStore,
-                _modalNavigationStore
-             );
-
-            MainWindow = new MainWindow()
-            {
-                DataContext = new MainViewModel(_modalNavigationStore, new YoutubeViewersViewModel(_youtubeViewersStore, _selectedYoutubeViewerStore, _modalNavigationStore))
-            };
-
+            MainWindow  = _host.Services.GetRequiredService<MainWindow>();
             MainWindow.Show();
             base.OnStartup(e);
+        }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            _host.StopAsync();
+            _host.Dispose();
+
+            base.OnExit(e);
+        }
+
+        private YoutubeViewersViewModel CreateYoutubeViewersViewModel(IServiceProvider services)
+        {
+            return YoutubeViewersViewModel.LoadViewModel(
+                services.GetRequiredService<YoutubeViewersStore>(),
+                services.GetRequiredService<SelectedYoutubeViewerStore>(),
+                services.GetRequiredService<ModalNavigationStore>()
+                );
         }
     }
 
